@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<title>Pricing</title>
+<head>
+<link rel="icon" href="circle-cropped.png">
+<style>
+ul {
+  font-family: ;
+  font-size: 20px;
+  font-weight: bold;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 140px;
+  z-index: 99;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+ 
+ul li {
+  float: left;
+}
+
+ul li a.tab {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 5px 5px;
+  text-decoration: none;
+ }
+
+ul li a.tab {
+  background-color: black;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+ }
+ul li a.tab:hover .navoverlay {
+  opacity: 1;
+}
+.cokelockerblack {
+  border: 2px solid white;
+  width: 100px;
+  height: 100px;
+}
+.navoverlay {
+  margin-top: -110px;
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  border: 2px solid white;
+  background-color: black;
+  opacity: 0;
+  transition: 1s ease;
+}
+.navtext {
+  color: white;
+  font-size: 15px;
+  font-family: Arial;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.cluster {
+  width: 850px;
+  height: 2150px;
+  float: right;
+  margin-left: 21%;
+  position: absolute;
+}
+.dealtop {
+  border: 10px solid white;
+  width: 830px;
+  background-color: black;
+  height: 300px;
+  margin-top: 40px;
+  position: absolute;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.twofortwo {
+  margin-left: 50px;
+  margin-top: 20px;
+  height: 250px;
+  transition: .2s ease;
+}
+.twofortwo:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.pricingicon {
+  margin-bottom: 30px;
+  height: 200px;
+  margin-left: 50px;
+  transition: 0.5s ease;
+}
+.pricingicon:hover {
+  transform: scale(0.7);
+}
+.cocacolagif {
+  border: 10px solid white;
+  width: 830px;
+  margin-top: 370px;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.onetwentyfiveblock {
+  border: 10px solid white;
+  width: 830px;
+  background-color: black;
+  height: 300px;
+  position: absolute;
+  margin-top: 20px;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.onetwentyfive {
+  margin-left: 5px;
+  margin-top: 30px;
+  height: 200px;
+  transition: .2s ease;
+}
+.onetwentyfive:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.canicon {
+  margin-left: 5px;
+  height: 200px;
+  transition: 0.5s ease;
+}
+.canicon:hover {
+  transform: scale(0.7);
+}
+.cantopblock {
+  border: 10px solid white;
+  width: 830px;
+  margin-top: 340px;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.gallery {
+  border: 10px solid white;
+  width: 830px;
+  background-color: black;
+  height: 250px;
+  position: absolute;
+  margin-top: 20px;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.sodacanblock {
+  float: left;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  margin-top: 20px;
+  margin-left: 60px;
+  transition: .2s ease;
+}
+.sodacanblock:hover {
+  transform: scale(1.1);
+}
+.sodacan {
+  height: 180px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.socialmedia {
+  margin-left: 45%;
+  margin-top: 30px;
+  width: 250px;
+}
+.socials {
+  border: none;
+  list-style-type: none;
+  text-decoration: none;
+  display: inline-block;
+  background-color: white;
+  text-align: center;
+  padding: 10px 12px;
+  cursor: pointer;
+  margin-left: 10px;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  border-radius: 50%;
+}
+.socials:hover {
+  background-color: #c3c3c3;
+}
+.footer {
+  height: 100px;
+  display: inline-block;
+  background-color: #b4044c;
+  vertical-align: middle;
+  text-align: center;
+  width: 100%;
+  box-shadow: 0px -10px 50px -10px rgba(0,0,0,0.67);
+  font-size: 10px;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  z-index: 98;
+}
+</style>
+</head>
+<body>
+<ul>
+	<li><a class="tab" href="Our Brand.html"><img class="cokelockerblack" src="Coke Locker Logo.png"><div class="navoverlay"><div class="navtext">Our<br>Brand</div></div></a></li>
+	<li><a class="tab" href="Coke Locker V2.html"><img class="cokelockerblack" src="homeicon.png"><div class="navoverlay"><div class="navtext">Home</div></div></a></li>
+	<li><a class="tab" href="Our Collection.html"><img class="cokelockerblack" src="canicon.png"><div class="navoverlay"><div class="navtext">Our<br>Collection</div></div></a></li>
+	<li><a class="tab" href="Pricing.html"><img class="cokelockerblack" src="pricingicon.png"><div class="navoverlay"><div class="navtext">Pricing</div></div></a></li>
+	<li><a class="tab" href="Customer Reviews.html"><img class="cokelockerblack" src="reviewicon.jpg"><div class="navoverlay"><div class="navtext">Customer<br>Reviews</div></div></a></li>
+	<li><a class="tab" href="Contact Us.html"><img class="cokelockerblack" src="contacticon.png"><div class="navoverlay"><div class="navtext">Contact Us</div></div></a></li>
+</ul>
+<div class="cluster">
+<div class="dealtop" style="margin-top: 0px;"><img class="pricingicon" src="pricingicon.png">
+<img class="twofortwo" src="discounticon.png"><img class="pricingicon" src="pricingicon.png">
+</div>
+<img class="cantopblock" src="cantop.jpg">
+<div class="onetwentyfiveblock">
+<img class="canicon" src="canicon.png">
+<img class="onetwentyfive" src="125each.jpg">
+<img class="canicon" src="canicon.png">
+</div>
+<img class="cocacolagif" src="cocacola.gif">
+<div class="gallery">
+<div class="sodacanblock"><img class="sodacan" src="cokecan.png" style="margin-left: 50px;"></div>
+<div class="sodacanblock"><img class="sodacan" src="cokelockerblack.png"></div>
+<div class="sodacanblock"><img class="sodacan" src="spritecan.png" style="margin-left: 50px;"></div>
+</div>
+</div>
+<footer class="footer">
+  <div class="socialmedia">
+    <button class="socials" style="margin-left: 0;"><a href="https://www.facebook.com/coke.locker.1"><img src="facebook.png" height="20px" width="20px"></a></button>
+    <button class="socials"><a href="https://twitter.com/cokelocker"><img src="twitter.png" height="20px" width="20px"></a></button>
+	<button class="socials"><a href="https://www.youtube.com/channel/UCp15rnhprW6J2G44BwvMpkQ"><img src="youtube.png" height="20px" width="20px"></a></button>
+	<button class="socials"><a href="https://www.instagram.com/cokelocker"><img src="instagram.png" height="20px" width="20px"></a></button>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<title>Customer Reviews</title>
+<head>
+<link rel="icon" href="circle-cropped.png">
+<style>
+ul {
+  font-family: ;
+  font-size: 20px;
+  font-weight: bold;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 140px;
+  z-index: 99;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+ 
+ul li {
+  float: left;
+}
+
+ul li a.tab {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 5px 5px;
+  text-decoration: none;
+ }
+
+ul li a.tab {
+  background-color: black;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+ }
+ul li a.tab:hover .navoverlay {
+  opacity: 1;
+}
+.cokelockerblack {
+  border: 2px solid white;
+  width: 100px;
+  height: 100px;
+}
+.navoverlay {
+  margin-top: -110px;
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  border: 2px solid white;
+  background-color: black;
+  opacity: 0;
+  transition: 1s ease;
+}
+.navtext {
+  color: white;
+  font-size: 15px;
+  font-family: Arial;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.cluster {
+  width: 850px;
+  height: 1700px;
+  float: right;
+  margin-left: 22%;
+  position: absolute;
+}
+.reviewtitleblock {
+  height: 250px;
+  width: 250px;
+  float: left;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  top: 30%;
+  position: fixed;
+  background-color: white;
+  transition: .2s ease;
+}
+.reviewtitleblock:hover {
+  transform: scale(1.1);
+}
+.reviewtitle {
+  height: 230px;
+  width: 230px;
+  margin-top: 10px;
+  margin-left: 10px; 
+}
+.reviewblock {
+  width: 500px;
+  height: 200px;
+  background-color: white;
+  margin-top: 20px;
+  position: relative;
+  margin-left: 350px;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  transition: .2s ease;
+}
+.reviewblock h1 {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 20px;
+  font-family: Arial;
+  color: #666666;
+}
+.reviewblock:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.customer {
+  display: inline-block;
+  margin-left: 10px;
+  margin-top: 10px;
+  border-radius: 50%;
+  width: 130px;
+  height: 130px;
+  position: relative;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.customerimg {
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+}
+.customername {
+  width: 160px;
+  height: 40px;
+  margin-top: -5px;
+  text-align: center;
+  font-weight: bold;
+  font-family: Arial;
+  color: #666666;
+  position: relative;
+}
+.stars {
+  width: 200px;
+  margin-top: -50px;
+  margin-left: 220px;
+}
+.reviewcontent {
+  margin-right: 10px;
+  margin-top: -190px;
+  position: relative;
+  width: 320px;
+  height: 120px;
+  float: right;
+  z-index: 10;
+}
+.socialmedia {
+  margin-left: 45%;
+  margin-top: 30px;
+  width: 250px;
+}
+.socials {
+  border: none;
+  list-style-type: none;
+  text-decoration: none;
+  display: inline-block;
+  background-color: white;
+  text-align: center;
+  padding: 10px 12px;
+  cursor: pointer;
+  margin-left: 10px;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  border-radius: 50%;
+}
+.socials:hover {
+  background-color: #c3c3c3;
+}
+
+.footer {
+  height: 100px;
+  display: inline-block;
+  background-color: #b4044c;
+  vertical-align: middle;
+  text-align: center;
+  width: 100%;
+  box-shadow: 0px -10px 50px -10px rgba(0,0,0,0.67);
+  font-size: 10px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 98;
+}
+</style>
+</head>
+<body>
+<ul>
+	<li><a class="tab" href="Our Brand.html"><img class="cokelockerblack" src="Coke Locker Logo.png"><div class="navoverlay"><div class="navtext">Our<br>Brand</div></div></a></li>
+	<li><a class="tab" href="Coke Locker V2.html"><img class="cokelockerblack" src="homeicon.png"><div class="navoverlay"><div class="navtext">Home</div></div></a></li>
+	<li><a class="tab" href="Our Collection.html"><img class="cokelockerblack" src="canicon.png"><div class="navoverlay"><div class="navtext">Our<br>Collection</div></div></a></li>
+	<li><a class="tab" href="Pricing.html"><img class="cokelockerblack" src="pricingicon.png"><div class="navoverlay"><div class="navtext">Pricing</div></div></a></li>
+	<li><a class="tab" href="Customer Reviews.html"><img class="cokelockerblack" src="reviewicon.jpg"><div class="navoverlay"><div class="navtext">Customer<br>Reviews</div></div></a></li>
+	<li><a class="tab" href="Contact Us.html"><img class="cokelockerblack" src="contacticon.png"><div class="navoverlay"><div class="navtext">Contact Us</div></div></a></li>
+</ul>
+<div class="cluster">
+  <div class="reviewtitleblock"><img class="reviewtitle" src="reviewtitle.jpg"></div>
+  <div class="reviewblock">
+  <div class="customer"><img class="customerimg" src="eddiewang.jpg"></div><div class="customername"><p>Eddie Wang<br>Grade 10</p></div>
+  <div class="reviewcontent"><h1>“Most refreshing Coke ive ever had. Got one right after lunch break. Mhm!”</h1></div>
+  <div class="stars"><img style="width: 200px;"src="5stars.jpg"></div>
+  </div>
+  <div class="reviewblock">
+  <div class="customer"><img class="customerimg" src="customericon.png"></div><div class="customername"><p>Daniel Shonwise<br>Grade 11</p></div>
+  <div class="reviewcontent"><h1>"Great Potential, the sky's the limit for the Coke Locker."</h1></div>
+  <div class="stars"><img style="width: 200px;"src="4stars.jpg"></div>
+  </div>
+  <div class="reviewblock">
+  <div class="customer"><img class="customerimg" src="customericon.png"></div><div class="customername"><p>Christian Pearson<br>Grade 11</p></div>
+  <div class="reviewcontent"><h1>“Coke Locker is a wonderful investment, Its a welcoming, affordable source of refreshments.”</h1></div>
+  <div class="stars"><img style="width: 200px;"src="5stars.jpg"></div>
+  </div>
+  <div class="reviewblock">
+  <div class="customer"><img class="customerimg" src="wubalemmeier.jpg"></div><div class="customername"><p>Wubalem Meier<br>Grade 8</p></div>
+  <div class="reviewcontent"><h1>“Coke Locker's great! Definetly worth the money. They're kind and have the best deals!”</h1></div>
+  <div class="stars"><img style="width: 200px;"src="5stars.jpg"></div>
+  </div>
+  <div class="reviewblock">
+  <div class="customer"><img class="customerimg" src="customericon.png"></div><div class="customername"><p>Ariel Sloan<br>Grade 8</p></div>
+  <div class="reviewcontent"><h1>“Coke Locker supplies great fizzy drinks and is great to have on a hot day at school.”</h1></div>
+  <div class="stars"><img style="width: 200px;"src="5stars.jpg"></div>
+  </div>
+  <div class="reviewblock">
+  <div class="customer"><img class="customerimg" src="customericon.png"></div><div class="customername"><p>Nick Frend<br>Grade 11</p></div>
+  <div class="reviewcontent"><h1>“It's freakin sick and I'd totally wear Coke Locker Merch. I think it could be big.”</h1></div>
+  <div class="stars"><img style="width: 200px;"src="5stars.jpg"></div>
+  </div>
+  <div class="reviewblock">
+  <div class="customer"><img class="customerimg" src="customericon.png"></div><div class="customername"><p>Joseph Chen<br>Grade 10</p></div>
+  <div class="reviewcontent"><h1>“Convenient...Very Convenient and Inexpensive.”</h1></div>
+  <div class="stars"><img style="width: 200px;"src="5stars.jpg"></div>
+  </div>
+</div>
+<footer class="footer">
+  <div class="socialmedia">
+    <button class="socials" style="margin-left: 0;"><a href="https://www.facebook.com/coke.locker.1"><img src="facebook.png" height="20px" width="20px"></a></button>
+    <button class="socials"><a href="https://twitter.com/cokelocker"><img src="twitter.png" height="20px" width="20px"></a></button>
+	<button class="socials"><a href="https://www.youtube.com/channel/UCp15rnhprW6J2G44BwvMpkQ"><img src="youtube.png" height="20px" width="20px"></a></button>
+	<button class="socials"><a href="https://www.instagram.com/cokelocker"><img src="instagram.png" height="20px" width="20px"></a></button>
+  </div>
+</footer>
+</body>
+</html>

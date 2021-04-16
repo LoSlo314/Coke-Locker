@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<title>Our Brand</title>
+<head>
+<link rel="icon" href="circle-cropped.png">
+<style>
+ul {
+  font-family: ;
+  font-size: 20px;
+  font-weight: bold;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 140px;
+  z-index: 99;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+ 
+ul li {
+  float: left;
+}
+
+ul li a.tab {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 5px 5px;
+  text-decoration: none;
+ }
+
+ul li a.tab {
+  background-color: black;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+ }
+ul li a.tab:hover .navoverlay {
+  opacity: 1;
+}
+.cokelockerblack {
+  border: 2px solid white;
+  width: 100px;
+  height: 100px;
+}
+.navoverlay {
+  margin-top: -110px;
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  border: 2px solid white;
+  background-color: black;
+  opacity: 0;
+  transition: 1s ease;
+}
+.navtext {
+  color: white;
+  font-size: 15px;
+  font-family: Arial;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.cluster {
+  width: 850px;
+  height: 4300px;
+  float: right;
+  margin-left: 21%;
+  position: absolute;
+}
+.section {
+  width: 850px;
+  position: relative;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color: white;
+  height: 400px;
+  margin-top: 50px;
+}
+.texthalf {
+  width: 450px;
+  height: 380px;
+  position: relative;
+  background-color: #4a042b;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  border: 10px solid white;
+}
+.texthalf h1 {
+  margin-top: 100px;
+  text-align: center;
+  color: white;
+  font-family: Arial;
+}
+.textblock {
+  margin-top: 30px; margin-right: 30px;
+  float: right;
+  background-color: white;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  position: relative;
+  height: 320px;
+  width: 320px;
+  transition: 1s ease;
+  cursor: pointer;
+}
+.textblock:hover {
+  transform: scale(1.1);
+}
+.textblock:hover .overlay {
+  opacity: 1;
+}
+.overlay {
+  z-index: 10;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  height: 300px;
+  width: 300px;
+  opacity: 0;
+  transition: 1s ease;
+  background-color: black;
+}
+.text {
+  position: absolute;
+  color: white;
+  font-size: 15px;
+  font-family: Arial;
+  margin-top: 150px;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.cokelockerlogo {
+  z-index: 9;
+  position: relative;
+  height: 300px;
+  width: 300px;
+  margin-top: 10px;
+  margin-left: 10px;
+  transition: 1s ease;
+  cursor: pointer;
+  float: left;
+}
+.quotesection {
+  width: 850px;
+  position: relative;
+  height: 100px;
+  margin-top: 50px;
+}
+.quotesection p {
+  text-align: center;
+  color: black;
+  font-family: Times New Roman;
+  font-size: 40px;
+}
+.socialmedia {
+  margin-left: 45%;
+  margin-top: 30px;
+  width: 250px;
+}
+.socials {
+  border: none;
+  list-style-type: none;
+  text-decoration: none;
+  display: inline-block;
+  background-color: white;
+  text-align: center;
+  padding: 10px 12px;
+  cursor: pointer;
+  margin-left: 10px;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  border-radius: 50%;
+}
+.socials:hover {
+  background-color: #c3c3c3;
+}
+.footer {
+  height: 100px;
+  display: inline-block;
+  background-color: #b4044c;
+  vertical-align: middle;
+  text-align: center;
+  width: 100%;
+  box-shadow: 0px -10px 50px -10px rgba(0,0,0,0.67);
+  font-size: 10px;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  z-index: 98;
+}
+</style>
+</head>
+<body>
+<ul>
+	<li><a class="tab" href="Our Brand.html"><img class="cokelockerblack" src="Coke Locker Logo.png"><div class="navoverlay"><div class="navtext">Our<br>Brand</div></div></a></li>
+	<li><a class="tab" href="Coke Locker V2.html"><img class="cokelockerblack" src="homeicon.png"><div class="navoverlay"><div class="navtext">Home</div></div></a></li>
+	<li><a class="tab" href="Our Collection.html"><img class="cokelockerblack" src="canicon.png"><div class="navoverlay"><div class="navtext">Our<br>Collection</div></div></a></li>
+	<li><a class="tab" href="Pricing.html"><img class="cokelockerblack" src="pricingicon.png"><div class="navoverlay"><div class="navtext">Pricing</div></div></a></li>
+	<li><a class="tab" href="Customer Reviews.html"><img class="cokelockerblack" src="reviewicon.jpg"><div class="navoverlay"><div class="navtext">Customer<br>Reviews</div></div></a></li>
+	<li><a class="tab" href="Contact Us.html"><img class="cokelockerblack" src="contacticon.png"><div class="navoverlay"><div class="navtext">Contact Us</div></div></a></li>
+</ul>
+<div class="cluster">
+   <div class="section" style="margin-top: 100px;">
+     <div class="texthalf" style="float: right;">
+     <h1 style="font-size:60px;">Our Brand</h1><h1 style="margin-top:-20px;">What is the Coke Locker?</h1>
+     </div>
+   <div class="textblock">
+     <div class="overlay">
+	     <div class="text" style="left: 50%;">
+		  <h1 style="font-size: 20px;">Our Logo</h1><p>Designed with the classic Coke Locker Colors, creating a clean yet classic look. The Logo represents Satisfaction and Individuality which is what the Coke Locker strives for.</p>
+	     </div>
+	   </div>
+     <img class="cokelockerlogo" src="Coke Locker Logo.png">
+   </div>
+   </div>
+   <div class="quotesection">
+   <p>"If you have thirst, No need to fear.<br> The Coke Locker is Here."</p>
+   </div>
+   
+   <div class="section">
+     <div class="texthalf" style="float: left;">
+	 <h1 style="font-size: 40px;">Coke Locker</h1><h1 style="margin-top: -10px;">Beverage Distribution Company</h1>
+	 </div>
+	 <div class="textblock">
+	   <div class="overlay">
+	     <div class="text" style="margin-left: 150px; margin-right: -75px;">
+		   <p>Coke Locker is a Beverage Distribution Company based out of Heritage Christian School and was founded in 2020. It's a customer streamlined service that offers ice cold beverages on demand for the best price. Customer's can purchase cans from Locker 508 or from a Cooled Case carried by a Coke Locker associate.</p>
+	     </div>
+	   </div>
+	  <img class="cokelockerlogo" src="distribute.jpg">
+	 </div>
+   </div>
+   
+   <div class="quotesection">
+   <p>"We keep our Margins Low <br> To Keep Customer Satisfaction High."</p>
+   </div>
+   
+   <div class="section">
+    <div class="texthalf" style="float: right;">
+	 <h1 style="font-size: 40px;margin-top: 120px;">CEO and Founder</h1><h1 style="margin-top: -10px;">Logan Sloan</h1>
+	</div>
+	<div class="textblock">
+	  <div class="overlay">
+	     <div class="text" style=" margin-left: 150px; margin-right: -75px;">
+		  <p>Logan Sloan founded the Coke Locker through ambition, passion, and drive which built it into the Company it is today.He is a promising young Entreprenuer and the Coke Locker is his way of stepping into the Business World. He is 16 years old and Lives in Kelowna BC.     
+	      </p>
+		 </div>
+	   </div>
+	 <img class="cokelockerlogo" src="loganceo.jpg">
+	</div>
+   </div>
+   
+   <div class="quotesection">
+   <p>"If you're a Shopper<br> Come on down to the Coke Locker."</p>
+   </div>
+   
+   <div class="section">
+    <div class="texthalf" style="float: left;">
+	 <h1 style="font-size: 40px;margin-top: 120px;">Coke Locker</h1><h1 style="margin-top: -10px;">Our Values</h1>
+	</div>
+	<div class="textblock">
+	   <div class="overlay">
+	     <div class="text" style="margin-left: 150px; margin-right: -75px;">
+		   <p>The sole purpose of the Coke Locker is to provide for the Consumer. We value the highest quality, the most affordable prices, and the most convenient service for our customers. We strive to offer beverages in the most accesible way to keep you refreshed and satisfied.</p>
+		 </div>
+	   </div>
+	  <img class="cokelockerlogo" src="values.jpg">
+	 </div>
+   </div>
+   
+   <div class="quotesection">
+   <p>"Coke Locker puts Cans <br>&nbsp; &nbsp;  in the People's Hands."</p>
+   </div>
+   
+   <div class="section">
+     <div class="texthalf" style="float: right;">
+	 <h1 style="font-size: 40px; margin-top: 120px;">Humble Beginnings</h1><h1 style="margin-top: -10px;">The History of Coke Locker</h1>
+	</div>
+	<div class="textblock">
+	   <div class="overlay">
+	     <div class="text" style="margin-left: 150px; margin-right: -75px;">
+		   <p>Coke Locker found it's beginnings with one young man, a cooler, a locker, and a dream. The Coke Locker first debuted on March 4 2020 with Logan Sloan carrying and selling a modest 6 cans. it wasn't much but it was a promising start. From there, he began building inventory, customers, and a brand. In the first week of business, 53 cans were sold and the Coke Locker was born.</p>
+		 </div>
+	   </div>
+	  <img class="cokelockerlogo" src="Cooler.jpg">
+	 </div>
+   </div>
+   
+   <div class="quotesection">
+   <p>"If you're sick call a Doctor, but we have the Remedy at the Coke Locker"</p>
+   </div>
+   
+   <div class="section">
+     <div class="texthalf" style="float: left;">
+	 <h1 style="font-size: 40px; margin-top: 120px;">Staying Safe</h1><h1 style="margin-top: -10px;">COVID19 and Coke Locker</h1>
+	</div>
+	<div class="textblock">
+	   <div class="overlay">
+	     <div class="text" style="margin-left: 150px; margin-right: -75px;">
+		 <p>The Future of the Coke Locker remains promising and exciting as we plan what Beverage Distribution will look like in September. We are taking COVID19 Safety protocols into consideration and we will guarantee every can is thoroughly sanitized and handled with gloves before it lands in customer hands. Just because COVID19 means we have to be isolated, it doesnt mean that we have to be thirsty.</p>
+		 </div>
+	   </div>
+	  <img class="cokelockerlogo" src="loganmask.jpg">
+	 </div>
+   </div>
+   
+   <div class="quotesection">
+   <p>"If you're looking to savour refreshing flavour, <br> Coke Locker is in favor."</p>
+   </div>
+   
+   <div class="section">
+     <div class="texthalf" style="float: right;">
+	 <h1 style="font-size: 40px; margin-top: 120px;">What's Upcoming?</h1><h1 style="margin-top: -10px;">Future of Coke Locker</h1>
+	</div>
+	<div class="textblock">
+	   <div class="overlay">
+	     <div class="text" style="margin-left: 150px; margin-right: -75px;">
+		 <p>The Coke Locker has a plethora of exciting developments coming down the pipline, we plan to continue expanding inventory and creating exciting promotions with new additions to Our Collection. We also plan to start creating Coke Locker Merchandise including sweaters and hoodies with the Coke Locker Logo which will be available for you to represent and support your favourite Beverage Distribution Company.</p>
+		 </div>
+	   </div>
+	  <img class="cokelockerlogo" src="cokelockersweater.jpg">
+	 </div>
+   </div>
+</div>
+<footer class="footer">
+  <div class="socialmedia">
+    <button class="socials" style="margin-left: 0;"><a href="https://www.facebook.com/coke.locker.1"><img src="facebook.png" height="20px" width="20px"></a></button>
+    <button class="socials"><a href="https://twitter.com/cokelocker"><img src="twitter.png" height="20px" width="20px"></a></button>
+	<button class="socials"><a href="https://www.youtube.com/channel/UCp15rnhprW6J2G44BwvMpkQ"><img src="youtube.png" height="20px" width="20px"></a></button>
+	<button class="socials"><a href="https://www.instagram.com/cokelocker"><img src="instagram.png" height="20px" width="20px"></a></button>
+  </div>
+</footer>
+</body>
+</html>

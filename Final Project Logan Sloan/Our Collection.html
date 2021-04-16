@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<title>Our Collection</title>
+<head>
+<link rel="icon" href="circle-cropped.png">
+<style>
+ul {
+  font-family: ;
+  font-size: 20px;
+  font-weight: bold;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 140px;
+  z-index: 99;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+ 
+ul li {
+  float: left;
+}
+
+ul li a.tab {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 5px 5px;
+  text-decoration: none;
+ }
+
+ul li a.tab {
+  background-color: black;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+ }
+ul li a.tab:hover .navoverlay {
+  opacity: 1;
+}
+.cokelockerblack {
+  border: 2px solid white;
+  width: 100px;
+  height: 100px;
+}
+.navoverlay {
+  margin-top: -110px;
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  border: 2px solid white;
+  background-color: black;
+  opacity: 0;
+  transition: 1s ease;
+}
+.navtext {
+  color: white;
+  font-size: 15px;
+  font-family: Arial;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.cluster {
+  width: 750px;
+  height: 750px;
+  float: right;
+  margin-left: 26%;
+  position: absolute;
+}
+.cokelocker {
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  position: absolute;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  margin-top: 550px;
+  margin-left: 550px;
+  z-index: 12;
+  transition: 0.2s ease;
+}
+.cokelocker:hover {
+  transform: scale(1.1);
+}
+.cokelockericon {
+  width: 180px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.collectionicon {
+  width: 180px;
+  margin-top: 10px;
+  margin-left: 10px;
+  border-radius: 50%;
+  transition: 1.2s ease;
+}
+.sodablockleft {
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  position: relative;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  float: left;
+  transition: 1s ease;
+  display: block;
+}
+.sodablockleft:hover {
+  transform: translate(-200px, 0px);
+  cursor: pointer;
+}
+.sodablockleft:hover .overlay {
+  opacity: 1;
+}
+.overlay {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  height: 180px;
+  width: 180px;
+  border-radius: 50%;
+  opacity: 0;
+  transition: 1.5s ease;
+}
+.text {
+  color: white;
+  font-size: 20px;
+  font-family: Blippo, fantasy;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.sodablockspace {
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  position: relative;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  float: left;
+  transition: .5s ease;
+}
+.ourcollectionblock {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  margin-top: 550px;
+  margin-left: 25%;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color: white;
+}
+.canicon {
+  width: 180px; margin-top: 10px; margin-left: 10px;
+}
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 98; 
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+}
+.modal-content {
+  margin: auto;
+  top: 30%;
+  right: 30%;
+  padding: 20px;
+  border: 10px solid white;
+  width: 200px;
+  height: 200px;
+  transition: .5s;
+}
+.modal-content:hover {
+ transform:scale(1.1);
+}
+.modal-content {
+ color: white;
+ font-size: 12px;
+ font-famiy: Arial;
+}
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+#myBtn {
+  padding: 0;
+  border: none;
+  background: none;
+}
+#myBtn:hover {
+  cursor: pointer;
+}
+.close:hover {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.socialmedia {
+  margin-left: 45%;
+  margin-top: 30px;
+  width: 250px;
+}
+.socials {
+  border: none;
+  list-style-type: none;
+  text-decoration: none;
+  display: inline-block;
+  background-color: white;
+  text-align: center;
+  padding: 10px 12px;
+  cursor: pointer;
+  margin-left: 10px;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  border-radius: 50%;
+}
+.socials:hover {
+  background-color: #c3c3c3;
+}
+.footer {
+  height: 100px;
+  display: inline-block;
+  background-color: #b4044c;
+  vertical-align: middle;
+  text-align: center;
+  width: 100%;
+  box-shadow: 0px -10px 50px -10px rgba(0,0,0,0.67);
+  font-size: 10px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 98;
+}
+</style>
+</head>
+<body>
+<ul>
+	<li><a class="tab" href="Our Brand.html"><img class="cokelockerblack" src="Coke Locker Logo.png"><div class="navoverlay"><div class="navtext">Our<br>Brand</div></div></a></li>
+	<li><a class="tab" href="Coke Locker V2.html"><img class="cokelockerblack" src="homeicon.png"><div class="navoverlay"><div class="navtext">Home</div></div></a></li>
+	<li><a class="tab" href="Our Collection.html"><img class="cokelockerblack" src="canicon.png"><div class="navoverlay"><div class="navtext">Our<br>Collection</div></div></a></li>
+	<li><a class="tab" href="Pricing.html"><img class="cokelockerblack" src="pricingicon.png"><div class="navoverlay"><div class="navtext">Pricing</div></div></a></li>
+	<li><a class="tab" href="Customer Reviews.html"><img class="cokelockerblack" src="reviewicon.jpg"><div class="navoverlay"><div class="navtext">Customer<br>Reviews</div></div></a></li>
+	<li><a class="tab" href="Contact Us.html"><img class="cokelockerblack" src="contacticon.png"><div class="navoverlay"><div class="navtext">Contact Us</div></div></a></li>
+</ul>
+<div class="cluster">
+	<div class="sodablockleft" style="margin-top: 500px; margin-left: 500px; z-index: 11;"><div class="overlay" style="background-color: #e4332c;"><div class="text">Classic Coca Cola</div></div><img class="collectionicon" src="cokelogo.png"></div>
+
+	<div class="sodablockspace" style="margin-top: -250px; margin-left: 450px; z-index: 10;"><img class="canicon" src="canicon.png"></div>
+	
+	<div class="sodablockleft" style="margin-top: -300px; margin-left: 400px; z-index: 9;"><div class="overlay" style="background-color: #04933c;"><div class="text">Refreshing Sprite</div></div><img class="collectionicon" src="spritelogo.jpg"></div>
+
+	<div class="sodablockspace" style="margin-top: -350px; margin-left: 350px; z-index: 8;"><img class="canicon"src="canicon.png"></div>
+	
+	<div class="sodablockleft" style="margin-top: -400px; margin-left: 300px; z-index: 7;"><div class="overlay" style="background-color: #971e91;"><div class="text">Juicy Grape Crush</div></div><img class="collectionicon" src="grapelogo.jpg"></div>
+	
+	<div class="sodablockspace" style="margin-top: -450px; margin-left: 250px; z-index: 6;"><img class="canicon"src="canicon.png"></div>
+	
+	<div class="sodablockleft" style="margin-top: -500px; margin-left: 200px; z-index: 5;"><img class="collectionicon" src="orangelogo.png"><div class="overlay" style="background-color: #eb7c04"><div class="text">Tangy Orange Crush</div></div></div>
+	
+	<div class="sodablockspace" style="margin-top: -550px; margin-left: 150px; z-index: 4;"><img class="canicon"src="canicon.png"></div>
+	
+	<div class="sodablockleft" style="margin-top: -600px; margin-left: 100px; z-index: 3;"><img class="collectionicon" src="rootbeerlogo.jpg"><div class="overlay" style="background-color: #a06f44;"><div class="text">Famous A&W <br> Root Beer</div></div></div>
+	
+	<div class="sodablockspace" style="margin-top: -650px; margin-left: 50px; z-index: 2;"><img class="canicon"src="canicon.png"></div>
+	
+	<div class="sodablockleft" style="margin-top: -700px; margin-left: 0px; z-index: 1;"><img class="collectionicon" src="creamsodalogo.jpg"><div class="overlay" style="background-color: #d54796;"><div class="text">Sweet <br> Cream Soda</div></div></div>
+	
+	<div class="cokelocker"><img class="cokelockericon" src="cokelockerblack.png"></div>
+
+ </div>
+ <script>
+var modal = document.getElementById("myModal");
+
+var btn = document.getElementById("myBtn");
+
+var span = document.getElementsByClassName("close")[0];
+
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+<footer class="footer">
+  <div class="socialmedia">
+    <button class="socials" style="margin-left: 0;"><a href="https://www.facebook.com/coke.locker.1"><img src="facebook.png" height="20px" width="20px"></a></button>
+    <button class="socials"><a href="https://twitter.com/cokelocker"><img src="twitter.png" height="20px" width="20px"></a></button>
+	<button class="socials"><a href="https://www.youtube.com/channel/UCp15rnhprW6J2G44BwvMpkQ"><img src="youtube.png" height="20px" width="20px"></a></button>
+	<button class="socials"><a href="https://www.instagram.com/cokelocker"><img src="instagram.png" height="20px" width="20px"></a></button>
+  </div>
+</footer>
+</body>
+</html>
